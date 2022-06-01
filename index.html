@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WRMS Url Shortener</title>
+        <meta charset="utf-8">
+        <link rel="icon" href="https://cdn0.iconfinder.com/data/icons/entypo/80/link5-512.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+        <script src="short.js"></script>
+    </head>
+    <body>
+        <div class="hero is-fullheight is-link">
+            <div class="hero-body">
+                <div class="container has-text-center">
+                    <h1 class="title">WRMS URL Shortener</h1>
+                    <p class="subtitle">How to use:</p>
+                    <p>TO use this, first visit the link to the link you need to shorten</p>
+                    <p>Example:</p>
+                    <code>https://wrms.tk/#example</code>
+                    <br><br>
+                    <p>Then enter the URL you need, and <a class="text" href="delete.html">BAM!!!</a> Next time you go there, it will send you to that URL! (if you do not put visit the url then input the code, then a random one will be generated that you can copy from the address bar!)</p>
+                    <div class="field">
+                        <p class="control has-icons-left">
+                                <input class="input" placeholder="Enter an URL" type="text" id="urlinput">
+                            <span class="icon is-small is-left">
+                            <i class="fas fa-link"></i>
+                            </span>
+                        </p>
+                    </div>
+                    <a id="buttons" class="button is-warning" onclick="shorturl()">
+                        <span class="icon">
+                            <i class="fas fa-check"></i>
+                        </span>
+                        <span>Shorten URL!</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <style>
+            .text {
+                cursor: text;
+            }
+        </style>
+    </body>
+</html>
